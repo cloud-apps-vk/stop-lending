@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
     <title>Технические работы</title>
     <style>
       * {
@@ -50,5 +51,8 @@
       <h1>Скоро вернёмся.</h1>
       <p class="text">Мы кое-что обновляем в Club Helper. Заходите попозже.</p>
     </section>
+    <script>
+      vkBridge.send('VKWebAppInit');
+    </script>
   </body>
 </html>
