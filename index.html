@@ -18,6 +18,7 @@
       }
       
       section {
+        position: fixed;
         user-select: none;
         -webkit-user-select: none;
         box-sizing: border-box;
@@ -58,7 +59,7 @@
     </section>
     <script>
       vkBridge.send('VKWebAppInit');
-      vkBridge.send('VKWebAppSetViewSettings', { status_bar_style: 'light' });
+      vkBridge.send('VKWebAppSetViewSettings', { status_bar_style: 'dark' });
     </script>
   </body>
 </html>
