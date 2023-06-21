@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <title>Технические работы</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial,sans-serif;
+      }
+
+      body {
+        background: #fff;
+      }
+      
+      section {
+        width: 100%;
+        position: fixed;
+        user-select: none;
+        -webkit-user-select: none;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        max-width: 800px;
+        max-height: 500px;
+      }
+
+      h1 {
+        max-width: 750px;
+        margin-top: 50px;
+        font-size: 40px;
+        color: #1d1d1f;
+      }
+
+      p {
+        max-width: 750px;
+        margin-top: 10px;
+        color: #6e6e73;
+        font-size: 16px;
+      }
+
+      .nowrap {
+        display: inline-block;
+        text-decoration: inherit;
+        white-space: nowrap;
+      }
+    </style>
+
+  </head>
+  <body>
+    <section>
+      <img src="work.jpg" alt="" draggable="false"/>
+      <h1>Скоро вернёмся.</h1>
+      <p class="text">Мы кое-что обновляем в <span class="nowrap">Блокноте</span>. Заходите попозже.</p>
+    </section>
+    <script>
+      vkBridge.send('VKWebAppInit');
+      vkBridge.send('VKWebAppSetViewSettings', { status_bar_style: 'dark' });
+    </script>
+  </body>
+</html>
